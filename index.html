@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Roster Minimalis | Produsen Roster Beton Bandung</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roster Minimalis | Produsen Roster Beton Bandung</title>
 
-<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-<header class="navbar">
-  <div class="container">
-    <div class="logo">Roster Minimalis</div>
-    <nav>
-      <a href="#beranda">Beranda</a>
-      <a href="#tentang">Tentang</a>
-      <a href="#produk">Produk</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
-  </div>
-</header>
+body {
+  background: #fff;
+  color: #333;
+}
 
-<!-- HERO -->
-<section class="hero" id="beranda">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Produsen Roster Beton & Ornamen Bangunan</h1>
-    <p>Kualitas kuat, presisi tinggi, desain modern untuk hunian & proyek Anda</p>
-    <a href="https://wa.me/628XXXXXXXXX" class="btn-primary">Chat WhatsApp</a>
-  </div>
-</section>
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #0d47a1;
+  z-index: 1000;
+}
 
-<!-- KEUNGGULAN -->
-<section class="section">
-  <div class="container grid-3">
-    <div class="box">✔ Kualitas Premium</div>
-    <div class="box">✔ Desain Minimalis</div>
-    <div class="box">✔ Pengiriman Aman</div>
-  </div>
-</section>
+.navbar .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-<!-- PRODUK -->
-<section class="section gray" id="produk">
-  <h2 class="title">Katalog Produk</h2>
-  <div class="container grid-3">
-    <div class="card">
-      <img src="img/produk1.jpg">
-      <h3>Roster Minimalis A</h3>
-    </div>
-    <div class="card">
-      <img src="img/produk2.jpg">
-      <h3>Roster Minimalis B</h3>
-    </div>
-    <div class="card">
-      <img src="img/produk3.jpg">
-      <h3>Roster Ornamen C</h3>
-    </div>
-  </div>
-</section>
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 
-<!-- KONTAK -->
-<section class="contact" id="kontak">
-  <h2>Hubungi Kami</h2>
-  <p>📍 Bandung, Jawa Barat</p>
-  <p>📞 <a href="https://wa.me/628XXXXXXXXX">WhatsApp</a></p>
-  <p>📧 email@rosterminimalis.com</p>
-</section>
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-<footer>
-  © 2025 Roster Minimalis. All Rights Reserved.
-</footer>
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("img/hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-</body>
-</html>
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #2196f3;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+/* PRODUK */
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align:
