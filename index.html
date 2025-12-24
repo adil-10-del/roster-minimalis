@@ -128,4 +128,113 @@ body {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  text-align:
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+}
+
+/* KONTAK */
+.contact {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #0b3c82;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">Roster Minimalis</div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#produk">Produk</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <h1>Produsen Roster Beton & Ornamen Bangunan</h1>
+    <p>Kualitas kuat, desain modern, cocok untuk hunian & proyek profesional.</p>
+    <a href="https://wa.me/628XXXXXXXXX" class="btn-primary">Chat WhatsApp</a>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section">
+  <div class="container grid-3">
+    <div class="box">✔ Kualitas Premium</div>
+    <div class="box">✔ Desain Minimalis</div>
+    <div class="box">✔ Pengiriman Aman</div>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section class="section gray" id="produk">
+  <h2 style="text-align:center;margin-bottom:40px;">Katalog Produk</h2>
+  <div class="container grid-3">
+    <div class="card">
+      <img src="img/produk1.jpg">
+      <h3>Roster Minimalis A</h3>
+    </div>
+    <div class="card">
+      <img src="img/produk2.jpg">
+      <h3>Roster Minimalis B</h3>
+    </div>
+    <div class="card">
+      <img src="img/produk3.jpg">
+      <h3>Roster Ornamen C</h3>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="contact" id="kontak">
+  <h2>Hubungi Kami</h2>
+  <p>📍 Bandung, Jawa Barat</p>
+  <p>📞 <a href="https://wa.me/628XXXXXXXXX">WhatsApp</a></p>
+  <p>📧 email@rosterminimalis.com</p>
+</section>
+
+<footer>
+  © 2025 Roster Minimalis. All Rights Reserved.
+</footer>
+
+</body>
+</html>
